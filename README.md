@@ -40,7 +40,7 @@ pip install ovos-transcription-validator-plugin
 
 ## 🛠 Configuration
 
-Add the plugin to the `utterance_transformers` section of your `mycroft.conf` (or OVOS equivalent):
+Add the plugin to the `utterance_transformers` section of your `mycroft.conf`:
 
 ```json
 {
