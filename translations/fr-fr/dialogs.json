@@ -1,0 +1,20 @@
+{
+  "say_again.dialog": [
+    "Désolé, je n'ai pas bien saisi, pouvez-vous répéter la question ?",
+    "Je n'ai pas bien compris. Pourriez-vous répéter ?",
+    "Pardon, pouvez-vous répéter la question ?",
+    "Désolé, j'ai manqué ça. Vous pourriez le répéter ?",
+    "Excusez-moi, je n'ai pas saisi. Veuillez le répéter.",
+    "Oups, j'ai raté ! Vous pouvez réessayer ?",
+    "Hmm, je ne suis pas sûr d'avoir bien entendu. Pouvez-vous répéter ?",
+    "Pourriez-vous le dire une fois de plus pour moi ?",
+    "Je n'ai pas compris. Vous ne m'en voudriez pas de le répéter ?",
+    "Désolé, votre demande n'était pas claire. Veuillez la répéter.",
+    "Malheureusement, je n'ai pas compris. Ayez la gentillesse de le dire à nouveau.",
+    "Je crains d'avoir manqué votre question. Pourriez-vous la répéter, s'il vous plaît ?",
+    "Désolé, pouvez-vous répéter ?",
+    "Pourriez-vous répéter cela ?",
+    "Je n'ai pas compris.",
+    "Pouvez-vous le dire à nouveau, s'il vous plaît ?"
+  ]
+}

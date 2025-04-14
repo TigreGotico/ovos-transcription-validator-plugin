@@ -1,0 +1,20 @@
+{
+  "say_again.dialog": [
+    "Barkatu, ezin izan dut hori hartu, mesedez, errepikatu galdera",
+    "Ez dut ondo ulertu. Errepika dezakezu?",
+    "Barkatu, galdera errepika dezakezu?",
+    "Barkatu, galdera galdu dut. Errepika dezakezu?",
+    "Barkatu, ez dut hartu. Mesedez, errepika ezazu.",
+    "Ups, galdu dut! Saia zaitezke berriro?",
+    "Hmm, ez nago ziur ondo entzun dudala. Errepika dezakezu?",
+    "Esan dezakezu behin gehiago niri?",
+    "Ez dut hartu. Errepika dezakezu?",
+    "Barkatu, zure eskaera ez zen argia. Mesedez, errepika ezazu.",
+    "Zoritxarrez, ez dut ulertu. Mesedez, esan berriro.",
+    "Beldur naiz zure galdera galdu dudala. Errepika dezakezu, mesedez?",
+    "Barkatu, errepika dezakezu?",
+    "Errepika dezakezu hori?",
+    "Ez dut hartu.",
+    "Esan dezakezu berriro, mesedez?"
+  ]
+}

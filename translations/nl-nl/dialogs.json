@@ -1,0 +1,20 @@
+{
+  "say_again.dialog": [
+    "Sorry, ik kon dat niet opvangen, wilt u de vraag alstublieft herhalen?",
+    "Ik begreep het niet goed. Kunt u het herhalen?",
+    "Pardon, kunt u de vraag herhalen?",
+    "Sorry, ik heb dat gemist. Zou u het willen herhalen?",
+    "Excuses, ik heb het niet opgevangen. Wilt u het alstublieft opnieuw zeggen?",
+    "Oeps, dat heb ik gemist! Kunt u het nog een keer proberen?",
+    "Hmm, ik ben er niet zeker van of ik het goed heb gehoord. Kunt u het herhalen?",
+    "Zou u dat nog een keer voor mij kunnen zeggen?",
+    "Ik heb het niet begrepen. Zou u het willen herhalen?",
+    "Sorry, uw verzoek was niet duidelijk. Wilt u het alstublieft herhalen?",
+    "Helaas heb ik het niet begrepen. Wees zo vriendelijk om het opnieuw te zeggen.",
+    "Ik ben bang dat ik uw vraag heb gemist. Zou u hem alstublieft kunnen herhalen?",
+    "Sorry, kunt u het herhalen?",
+    "Kunt u dat herhalen?",
+    "Ik heb het niet begrepen.",
+    "Kunt u het alstublieft nog een keer zeggen?"
+  ]
+}

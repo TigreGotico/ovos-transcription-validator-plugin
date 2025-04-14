@@ -1,0 +1,20 @@
+{
+  "say_again.dialog": [
+    "Scusa, non ho capito, puoi ripetere la domanda?",
+    "Non ho ben compreso. Potresti ripetere?",
+    "Scusa, puoi ripetere la domanda?",
+    "Scusa, non ho afferrato. Potresti ripetere?",
+    "Scusa, non ho colto. Per favore, ripeti.",
+    "Ops, l'ho perso! Puoi provare di nuovo?",
+    "Hmm, non sono sicuro di aver sentito bene. Puoi ripetere?",
+    "Potresti dirlo un'altra volta per me?",
+    "Non ho capito. Ti dispiacerebbe ripetere?",
+    "Scusa, la tua richiesta non era chiara. Per favore, ripetila.",
+    "Purtroppo, non ho capito. Abbi la gentilezza di dirlo di nuovo.",
+    "Temo di aver perso la tua domanda. Potresti ripeterla, per favore?",
+    "Scusa, puoi ripetere?",
+    "Potresti ripetere questo?",
+    "Non ho capito.",
+    "Puoi dirlo di nuovo, per favore?"
+  ]
+}

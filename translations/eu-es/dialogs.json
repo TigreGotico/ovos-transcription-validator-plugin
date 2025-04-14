@@ -1,0 +1,20 @@
+{
+  "say_again.dialog": [
+    "Lo siento, no pude captar eso, por favor repite la pregunta",
+    "No lo entendí bien. ¿Podrías repetirlo?",
+    "Perdón, ¿puedes repetir la pregunta?",
+    "Lo siento, me lo perdí. ¿Te importaría repetirlo?",
+    "Disculpa, no lo capté. Por favor, dilo de nuevo.",
+    "Ups, ¡me lo perdí! ¿Puedes intentarlo de nuevo?",
+    "Hmm, no estoy seguro de haberlo escuchado bien. ¿Puedes repetirlo?",
+    "¿Podrías decirlo una vez más para mí?",
+    "No lo capté. ¿Te importaría volver a decirlo?",
+    "Disculpa, tu solicitud no estaba clara. Por favor, repítela.",
+    "Lamentablemente, no entendí. Tenga la amabilidad de decirlo de nuevo.",
+    "Me temo que perdí tu pregunta. ¿Podrías repetirla, por favor?",
+    "Lo siento, ¿puedes repetirlo?",
+    "¿Podrías repetir eso?",
+    "No lo capté.",
+    "¿Puedes decirlo de nuevo, por favor?"
+  ]
+}

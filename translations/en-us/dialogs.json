@@ -1,0 +1,20 @@
+{
+  "say_again.dialog": [
+    "Sorry I couldn't catch that, please repeat the question",
+    "I didn't quite get that. Could you say it again?",
+    "Pardon me, can you repeat the question?",
+    "I'm sorry, I missed that. Would you mind repeating it?",
+    "Apologies, I didn't catch that. Please say it again.",
+    "Whoops, I missed that! Can you try again?",
+    "Hmm, not sure I heard you right. Can you repeat?",
+    "Could you say that one more time for me?",
+    "I didn’t catch that. Mind giving it another go?",
+    "Apologies, your request wasn't clear. Please repeat it.",
+    "Regrettably, I didn’t understand. Kindly say that again.",
+    "I’m afraid I missed your question. Could you repeat it, please?",
+    "Sorry, come again?",
+    "Could you repeat that?",
+    "Didn’t catch that.",
+    "Say that again, please?"
+  ]
+}

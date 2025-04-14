@@ -1,0 +1,20 @@
+{
+  "say_again.dialog": [
+    "Entschuldigung, das habe ich nicht mitbekommen, könnten Sie die Frage bitte wiederholen?",
+    "Das habe ich nicht ganz verstanden. Könnten Sie es bitte wiederholen?",
+    "Entschuldigung, könnten Sie die Frage wiederholen?",
+    "Tut mir leid, das habe ich verpasst. Würden Sie es bitte wiederholen?",
+    "Entschuldigung, das habe ich nicht mitbekommen. Bitte sagen Sie es noch einmal.",
+    "Ups, das habe ich verpasst! Können Sie es noch einmal versuchen?",
+    "Hmm, ich bin mir nicht sicher, ob ich es richtig gehört habe. Könnten Sie es wiederholen?",
+    "Könnten Sie das noch einmal für mich sagen?",
+    "Das habe ich nicht verstanden. Würden Sie es bitte wiederholen?",
+    "Entschuldigung, Ihre Anfrage war nicht klar. Bitte wiederholen Sie sie.",
+    "Leider habe ich es nicht verstanden. Seien Sie so freundlich und sagen Sie es noch einmal.",
+    "Ich fürchte, ich habe Ihre Frage verpasst. Könnten Sie sie bitte wiederholen?",
+    "Entschuldigung, könnten Sie das wiederholen?",
+    "Könnten Sie das wiederholen?",
+    "Das habe ich nicht verstanden.",
+    "Könnten Sie das bitte noch einmal sagen?"
+  ]
+}
