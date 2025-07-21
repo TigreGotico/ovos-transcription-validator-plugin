@@ -4,8 +4,6 @@ A plugin for [OVOS](https://openvoiceos.com) that uses a local or remote LLM (e.
 
 It helps filter out garbled, nonsensical, or incomplete utterances—reducing confusion and improving the accuracy of downstream skills.
 
-> ⚠️ **Private Repository:** This project is not yet publicly available. Please do not share this repository outside the early access group.
-
 ---
 
 ## ✨ Features
