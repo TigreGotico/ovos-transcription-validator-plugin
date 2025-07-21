@@ -3,7 +3,7 @@ import os
 
 from setuptools import setup
 
-URL = "https://github.com/OpenVoiceOS/ovos-transcription-validator-plugin"
+URL = "https://github.com/TigreGotico/ovos-transcription-validator-plugin"
 PLUGIN_CLAZZ = "TranscriptionValidatorPlugin"
 PKG = "ovos_transcription_validator"
 
@@ -68,6 +68,7 @@ setup(
     name=REPO,
     description='OpenVoiceOS Transcription Validator Plugin',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     version=get_version(),
     author=AUTHOR,
     author_email='jarbasai@mailfence.com',

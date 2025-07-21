@@ -1,88 +1,95 @@
-# 🧠 OVOS Transcription Validator Plugin
+# **OVOS Transcription Validator Plugin**
 
-This plugin uses a local or remote LLM (e.g., via [Ollama](https://ollama.ai)) to validate transcriptions from
-speech-to-text (STT) engines before they are processed by a voice assistant.
+A plugin for [OVOS](https://openvoiceos.com) that uses an OpenAI-compatible Large Language Model (LLM) to validate
+transcriptions from speech-to-text (STT) before they are processed by your voice assistant.
 
-It helps avoid processing nonsense, garbled, or incomplete transcriptions that can confuse downstream skills.
+It helps filter out garbled, nonsensical, or incomplete utterances—reducing confusion and improving the accuracy of
+downstream skills.
 
-Supported languages will depend on the specific LLM you are using
+---
 
-## 💡 How It Works
+## **Features**
 
-1. Receives a transcribed utterance and language code.
-2. Sends a prompt to an LLM with examples and the transcription.
-3. The LLM responds with `True` or `False` based on whether the transcription is coherent and complete.
-4. If the response is `False`, the utterance is canceled and tagged as a mistranscription.
+* Multilingual transcription validation
+* Powered by OpenAI-compatible LLMs (e.g., OpenAI API, Ollama, custom servers)
+* Filters out invalid utterances before processing
+* Optional feedback via error sound or dialog
+* Fully configurable, with per-request overrides
 
-## 📦 Installation
+---
+
+## **How It Works**
+
+1. The plugin receives an STT transcription and language code.
+2. A structured prompt with examples is sent to the configured OpenAI-compatible LLM API.
+3. The LLM responds with True (valid) or False (invalid).
+4. If invalid:
+    * The utterance is canceled.
+    * Optionally, a dialog prompt or error sound is triggered.
+
+---
+
+## **Installation**
 
 ```bash
 pip install ovos-transcription-validator-plugin
 ```
 
-## ⚠️ Notes
+---
 
-- You need a local or network-accessible instance of Ollama.
-- This plugin assumes you have the appropriate model (like `gemma3:1b`) installed in Ollama.
+## **Configuration**
 
-## 🔧 Configuration
+Add the plugin to the utterance_transformers section of your mycroft.conf.
 
-Provides the utterance transformer plugin `"ovos-transcription-validator-plugin"`
-
-Enable and configure it in your `mycroft.conf`
+The plugin defaults to using https://llama.smartgic.io/v1 with qwen2.5:7b and a placeholder API key sk-xxxx.
 
 ```json
 {
- "utterance_transformers": {
-      "ovos-transcription-validator-plugin": {
-          "model": "gemma3:1b",
-          "ollama_url": "http://192.168.1.200:11434",
-          "prompt_template": "/path/to/template.txt",
-          "error_sound": true
-      }
+  "utterance_transformers": {
+    "ovos-transcription-validator-plugin": {
+      "api_url": "https://llama.smartgic.io/v1",
+      "api_key": "sk-xxxx",
+      "model": "qwen2.5:7b",
+      "prompt_template_system": "/path/to/system_template.txt",
+      "prompt_template_user": "/path/to/user_template.txt",
+      "error_sound": true,
+      "mode": "ignore"
+    }
   }
 }
 ```
 
-- `model`: The name of the model exposed by Ollama.
-- `ollama_url`: URL to your Ollama instance.
-- `prompt_template`: full path to a .txt file, if set will override the default template, more info below
-- `error_sound`: wether to play a error sound on transcription error or not
+---
 
-### Default Prompt Template
+### **Available Settings**
 
-```text
-You are a multilingual language model helping a voice assistant determine if transcribed user input from speech-to-text (STT) is valid or not.
+| Key                    | Description                                                                                                              | Default Value                |
+|:-----------------------|:-------------------------------------------------------------------------------------------------------------------------|:-----------------------------|
+| api_url                | The URL of your OpenAI-compatible LLM API endpoint.                                                                      | https://llama.smartgic.io/v1 |
+| api_key                | Your API key for the LLM service. Set to null or omit if no key is required (e.g., some local Ollama setups).            | sk-xxxx (placeholder)        |
+| model                  | The name of the LLM model to use (e.g., qwen2.5:7b, gpt-3.5-turbo, gemma3:1b).                                           | qwen2.5:7b                   |
+| prompt_template_system | (Optional) Path to a .txt file to override the default system prompt for the LLM.                                        | (internal default)           |
+| prompt_template_user   | (Optional) Path to a .txt file to override the default user prompt template for the LLM.                                 | (internal default)           |
+| error_sound            | true to play a sound on error, false to disable, or a string path to a custom sound file.                                | false                        |
+| mode                   | reprompt to ask the user to repeat the utterance, or ignore to silently cancel the invalid input.                        | ignore                       |
+| max_tokens             | Maximum number of tokens for the LLM's response.                                                                         | 3                            |
+| temperature            | LLM generation temperature. Lower values (e.g., 0.0) make the output more deterministic (good for True/False responses). | 0.0                          |
+| top_p                  | LLM sampling parameter.                                                                                                  | 0.2                          |
+| stop_token             | A list of strings that, if encountered, will cause the LLM to stop generating further tokens.                            | ["\n", " "]                   |
+| api_timeout            | Timeout in seconds for the LLM API request.                                                                              | 10                           |
 
-This system supports user input in multiple languages: English (en), Portuguese (pt), Spanish (es), Catalan (ca), Galician (gl), Basque (eus), Italian (it), French (fr), German (de), Dutch (nl), and Danish (da).
+---
 
-You will receive:
-- the language code of the utterance
-- the transcribed sentence
+## **Requirements & Notes**
 
-Respond only with:
-- `True` if the sentence is valid, complete and coherent in the specified language.
-- `False` if the sentence is clearly garbled, incomplete, nonsensical, or the result of a transcription error.
+* Requires an OpenAI-compatible LLM API endpoint to be accessible (
+  e.g., [OpenAI API](https://platform.openai.com/), [Ollama](https://ollama.ai) running locally, or another custom
+  server).
+* You must have a supported model already available on your chosen LLM server.
+* The plugin can adapt to different languages based on the LLM's capabilities and training.
 
-### Examples:
-Language: en  
-Sentence: "Play the next song."  
-Answer: True
+---
 
-Language: en  
-Sentence: "Potato stop green light now yes."  
-Answer: False
+## **Feedback & Contributions**
 
-Language: pt  
-Sentence: "Liga as luzes da sala."  
-Answer: True
-
-Language: pt  
-Sentence: "Céu laranja vai cadeira não som."  
-Answer: False
-
-### Now evaluate the next sentence.
-Language: {lang}  
-Sentence: "{transcribed_text}"  
-Answer:
-```
+Found a bug or want to contribute? PRs and issues are welcome!
