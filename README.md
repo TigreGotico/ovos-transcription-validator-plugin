@@ -18,7 +18,7 @@ downstream skills.
 
 ---
 
-## **⚙️ How It Works**
+## **How It Works**
 
 1. The plugin receives an STT transcription and language code.
 2. A structured prompt with examples is sent to the configured OpenAI-compatible LLM API.
@@ -86,8 +86,6 @@ The plugin defaults to using https://llama.smartgic.io/v1 with qwen2.5:7b and a 
   e.g., [OpenAI API](https://platform.openai.com/), [Ollama](https://ollama.ai) running locally, or another custom
   server).
 * You must have a supported model already available on your chosen LLM server.
-* The api_key sk-xxxx is a placeholder for the default public server and will likely not work. You should replace it
-  with a valid key if you intend to use that server, or configure your own local LLM.
 * The plugin can adapt to different languages based on the LLM's capabilities and training.
 
 ---
