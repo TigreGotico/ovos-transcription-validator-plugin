@@ -1,12 +1,16 @@
 # Changelog
 
-## [0.1.0a1](https://github.com/TigreGotico/ovos-transcription-validator-plugin/tree/0.1.0a1) (2025-07-21)
+## [0.1.1a1](https://github.com/TigreGotico/ovos-transcription-validator-plugin/tree/0.1.1a1) (2025-12-18)
 
-[Full Changelog](https://github.com/TigreGotico/ovos-transcription-validator-plugin/compare/c6a921b02be0c9ad10bc7ee6fe638312011e4a3c...0.1.0a1)
+[Full Changelog](https://github.com/TigreGotico/ovos-transcription-validator-plugin/compare/V0.1.0...0.1.1a1)
 
 **Merged pull requests:**
 
-- feat: use OpenAI api not Ollama [\#1](https://github.com/TigreGotico/ovos-transcription-validator-plugin/pull/1) ([JarbasAl](https://github.com/JarbasAl))
+- Configure Renovate [\#3](https://github.com/TigreGotico/ovos-transcription-validator-plugin/pull/3) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [V0.1.0](https://github.com/TigreGotico/ovos-transcription-validator-plugin/tree/V0.1.0) (2025-07-21)
+
+[Full Changelog](https://github.com/TigreGotico/ovos-transcription-validator-plugin/compare/0.1.0...V0.1.0)
 
 
 
