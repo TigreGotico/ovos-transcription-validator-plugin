@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2a1](https://github.com/TigreGotico/ovos-transcription-validator-plugin/tree/0.1.2a1) (2026-04-03)
+
+[Full Changelog](https://github.com/TigreGotico/ovos-transcription-validator-plugin/compare/0.1.1a1...0.1.2a1)
+
+**Merged pull requests:**
+
+- fix\(i18n\): normalize locale folders to canonical BCP-47 [\#10](https://github.com/TigreGotico/ovos-transcription-validator-plugin/pull/10) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.1a1](https://github.com/TigreGotico/ovos-transcription-validator-plugin/tree/0.1.1a1) (2025-12-18)
 
 [Full Changelog](https://github.com/TigreGotico/ovos-transcription-validator-plugin/compare/V0.1.0...0.1.1a1)
