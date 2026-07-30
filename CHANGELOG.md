@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.2a3](https://github.com/TigreGotico/ovos-transcription-validator-plugin/tree/0.1.2a3) (2026-07-30)
+
+[Full Changelog](https://github.com/TigreGotico/ovos-transcription-validator-plugin/compare/0.1.2a1...0.1.2a3)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#15](https://github.com/TigreGotico/ovos-transcription-validator-plugin/pull/15) ([JarbasAl](https://github.com/JarbasAl))
+- feat: add da-DK and sv-SE translations [\#13](https://github.com/TigreGotico/ovos-transcription-validator-plugin/pull/13) ([andlo](https://github.com/andlo))
+
 ## [0.1.2a1](https://github.com/TigreGotico/ovos-transcription-validator-plugin/tree/0.1.2a1) (2026-04-03)
 
 [Full Changelog](https://github.com/TigreGotico/ovos-transcription-validator-plugin/compare/0.1.1a1...0.1.2a1)
