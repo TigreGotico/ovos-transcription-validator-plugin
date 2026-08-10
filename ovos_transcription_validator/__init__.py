@@ -15,6 +15,11 @@ from ovos_utils.lang import standardize_lang_tag
 from ovos_utils.list_utils import deduplicate_list, flatten_list
 from ovos_utils.log import LOG
 
+# The largest language distance that still counts as a usable match. langcodes
+# gives exactly 10 to a specific language measured against its more-commonly-used
+# macrolanguage tag, such as "arz" against "ar", so the bound is inclusive.
+MAX_LANG_DISTANCE = 10
+
 # Default prompt for LLM validation
 # This is formatted as a system message for OpenAI-compatible APIs,
 # and will be combined with a user message for the actual query.
@@ -147,9 +152,10 @@ class TranscriptionValidatorPlugin(UtteranceTransformer):
                 min_distance = distance
                 best_match_lang = available_lang
 
-        # A low score (e.g., < 10) indicates a close language match.
-        # Adjust this threshold if needed.
-        if best_match_lang and min_distance < 10:
+        # A distance of MAX_LANG_DISTANCE or less is a usable match; the
+        # bound is inclusive, because langcodes gives exactly 10 to a language
+        # measured against its macrolanguage tag.
+        if best_match_lang and min_distance <= MAX_LANG_DISTANCE:
             dialogs = self.dialogs[name].get(best_match_lang)
             if dialogs:
                 return random.choice(dialogs)
