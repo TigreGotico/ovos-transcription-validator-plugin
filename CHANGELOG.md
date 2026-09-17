@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3a1](https://github.com/TigreGotico/ovos-transcription-validator-plugin/tree/0.1.3a1) (2026-09-17)
+
+[Full Changelog](https://github.com/TigreGotico/ovos-transcription-validator-plugin/compare/0.1.2a3...0.1.3a1)
+
+**Merged pull requests:**
+
+- fix: accept a dialog language at the distance threshold [\#17](https://github.com/TigreGotico/ovos-transcription-validator-plugin/pull/17) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.2a3](https://github.com/TigreGotico/ovos-transcription-validator-plugin/tree/0.1.2a3) (2026-07-30)
 
 [Full Changelog](https://github.com/TigreGotico/ovos-transcription-validator-plugin/compare/0.1.2a1...0.1.2a3)
